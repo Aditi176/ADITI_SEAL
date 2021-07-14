@@ -16,3 +16,10 @@ function check_validation() {
     alert("Please fill the details correctly !");
   }
 }
+
+function reset() {
+  document.getElementById("name").value = "";
+  document.getElementById("email").value = "";
+  document.getElementById("number").value = "";
+  document.getElementById("comment").value = "";
+}

@@ -227,8 +227,8 @@ nav ul li .icon{
 
 
 /*contact*/
-.contact{
-	
+.contact .col-md-9{
+	margin-top: -20px;
 }
 
 .contact .container{
@@ -288,7 +288,7 @@ nav ul li .icon{
  }
 
 .contact .col-md-3{
-	margin-top: 30px;
+	margin-top: 0px;
 }
 
 .contact .col-md-3 ul li{
