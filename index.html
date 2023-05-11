@@ -44,7 +44,7 @@
   </head>
   <body>
     <!-- nav desktop -->
-    <nav>
+    <nav id="nav">
       <ul>
         <li class="AS">
           <a href="index.html"
@@ -56,13 +56,13 @@
             &nbsp /Aditi Seal/</a
           >
         </li>
-        <li><a href="about.html">About me</a></li>
-        <li><a href="skills.html">Skills</a></li>
-        <li><a href="projects.html">Projects</a></li>
-        <li><a href="contact.html">Contact</a></li>
+        <li><a class="a_links"href="#about" id="active">About me</a></li>
+        <li><a class="a_links"href="#skills">Skills</a></li>
+        <li><a class="a_links"href="#projects">Projects</a></li>
+        <li><a class="a_links"href="#contact">Contact</a></li>
       </ul>
     </nav>
-
+    
     <!-- cover section -->
     <div class="home">
       <div class="container">
@@ -76,12 +76,209 @@
               destroy me but my own mindset can.. "
             </p>
             <br />
-            <a href="contact.html"
+            <div class="resume">
+              <a href="CV.pdf" target="blank"><button><span>View my CV &#10142</span></button></a>&nbsp; &nbsp;<a href="#contact"
               ><button><span>REACH OUT</span></button></a
             >
+            </div>
+            
           </div>
           <div class="col-md-5">
-            <img src="imgs/aditi_pic2.png" alt="" />
+            <img src="imgs/Aditi_Pic.png" alt="" />
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- About ME -->
+    <div class="about" id="about">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-7">
+            <h1>ABOUT ME__________</h1>
+            <p>
+              Hello! As a System Engineer with over 3 years of experience in the field, I have developed a strong understanding of how to communicate
+              with customers efficiently and effectively.
+              <br><br>
+              I am confident that my skills and experience in Technical field as well as in business makes me a
+              strong candidate for the role.
+            </p>
+          </div>
+          <div class="col-md-5">
+            <div class="imgwrap">
+              <img src="imgs/Aditi_Pic_2.jpg" alt="">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Skills -->
+    <div class="skills" id="skills">
+      <div class="container">
+        <h1>MY SKILLS__________</h1>
+        <div class="row">
+          <div class="col-sm-3">
+            <div class="text">
+              <img src="imgs/html.png" id="html">
+            </div>
+            <h4>HTML</h4>
+          </div>
+          <div class="col-sm-3">
+            <div class="text">
+              <img src="imgs/css.png" id="html">
+            </div>
+            <h4>CSS</h4>
+          </div>
+          <div class="col-sm-3">
+            <div class="text">
+              <img src="imgs/JS.png" id="html">
+            </div>
+            <h4>JavaScript</h4>
+          </div>
+          <div class="col-sm-3">
+            <div class="text">
+              <img src="imgs/java.png" id="html">
+            </div>
+            <h4>Core Java</h4>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-sm-3">
+            <div class="text">
+              <img src="imgs/c.png" id="html">
+            </div>
+            <h4>C Programming</h4>
+          </div>
+          <div class="col-sm-3">
+            <div class="text">
+              <img src="imgs/nodejs.png" id="html">
+            </div>
+            <h4>NodeJS</h4>
+          </div>
+          <div class="col-sm-3">
+            <div class="text">
+              <img src="imgs/bootstrap.png" id="html">
+            </div>
+            <h4>Bootstrap</h4>
+          </div>
+          <div class="col-sm-3">
+            <div class="text">
+              <img src="imgs/sql.png" id="html">
+            </div>
+            <h4>SQL</h4>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-sm-3">
+            <div class="text">
+              <img src="imgs/github.png" id="html">
+            </div>
+            <h4>GitHub</h4>
+          </div>
+          <div class="col-sm-3">
+            <div class="text">
+              <img src="imgs/office.png" id="html">
+            </div>
+            <h4>MS Office</h4>
+          </div>
+          <div class="col-sm-3">
+            <div class="text">
+              <img src="imgs/jira.png" id="html">
+            </div>
+            <h4>JIRA</h4>
+          </div>
+          <div class="col-sm-3">
+            <div class="text">
+              <img src="imgs/servicenow.png" id="html">
+            </div>
+            <h4>ServiceNow</h4>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- PROJECTS -->
+    <div class="projects" id="projects">
+      <div class="container">
+        <h1>PROJECTS__________</h1>
+        <!-- Project 1 -->
+        <div class="wrapper_one">
+          <div class="row">
+            <div class="col-md-5">
+              <h2>Bistro-Dine Here</h2>
+              <h4>December 2019 - January 2020</h4>
+              <p>Website made for virtual restaurant. Used HTML5,CSS3 and Javascript lightbox to develop it. Mainly used css grid system for the cards.</p>
+              <div class="buttons_one">
+                <a href="https://aditi176.github.io/Bistro-Dine-Here/" target="blank"><button>VIEW PROJECT</button></a>
+                <a href="https://github.com/Aditi176/Bistro-Dine-Here" target="blank"><button>VIEW CODE</button></a>
+              </div>
+            </div>
+            <div class="col-md-7">
+              <img src="imgs/bistro.png" alt="Bistro" class="image_one">
+              <div class="overlay_one">
+                <div class="text_one"><a href="imgs/bistro.jpg">PREVIEW</a></div>
+              </div>
+            </div>
+          </div>
+        </div>
+  
+        <!-- Project 2 -->
+        <div class="wrapper_two">
+          <div class="row">
+            <div class="col-md-7">
+              <img src="imgs/byt.png" alt="bYt" class="image_two">
+              <div class="overlay_two">
+                <div class="text_two"><a href="imgs/byt.jpg">PREVIEW</a></div>
+              </div>
+            </div>
+            <div class="col-md-5">
+              <h2>bYt-Book Your Trip</h2>
+              <h4>November 2019 - December 2019</h4>
+              <p>This was my first website which i had build and then modified. Website made for virtual travel booking website. Used HTML5,CSS3 to develop it. Used checkbox to built the hamburger menu and is responsive.</p>
+              <div class="buttons_two">
+                <a href="" target="blank"><button>VIEW PROJECT</button></a>
+                <a href="" target="blank"><button>VIEW CODE</button></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- CONTACT -->
+    <div class="contact" id="contact">
+      <div class="container">
+        <h1>CONTACT__________</h1>
+  
+        <div class="row">
+          <div class="col-md-9">
+            <!-- <form action="index.html" id="contact_form" method="POST"> -->
+            <input type="text" id="name" name="name" placeholder="Name" required><br>
+            <input type="email" id="email" name="email" placeholder="Email" required><br>
+            <input type="text" id="number" name="mobile" placeholder="Mobile" required><br>
+            <textarea id="comment" name="message" form="contact_form" placeholder="Message.."
+              required></textarea><br>
+            <div class="buttons">
+              <input type="submit" value="Submit" class="submit" onclick="check_validation()">
+              <input type="reset" value="Reset" id="reset" class="reset" onclick="reset()">
+            </div>
+            <!-- </form> -->
+          </div>
+          <div class="col-md-3">
+            <ul>
+              <li><a href="https://www.linkedin.com/in/aditi-seal-92a164158/" target="blank"><i
+                    class="fa fa-linkedin-square"></i> &nbsp LinkedIn</a></li>
+              <li><a href="https://github.com/Aditi176" target="blank"><i class="fa fa-github"></i> &nbsp
+                  GitHub</a></li>
+              <li><a href="https://www.facebook.com/profile.php?id=100017392380906" target="blank"><i
+                    class="fa fa-facebook-square"></i> &nbsp Facebook</a></li>
+              <li><a href="https://www.instagram.com/nfaditi801/?hl=en" target="blank"><i
+                    class="fa fa-instagram"></i> &nbsp Instagram</a></li>
+            </ul>
           </div>
         </div>
       </div>
@@ -90,7 +287,7 @@
     <!-- footer -->
     <div class="footer">
       <p>
-        &copy2020-Aditi Seal | All Rights Reserved | Developed by Aditi Seal
+        &copy2023-Aditi Seal | All Rights Reserved | Developed by Aditi Seal
       </p>
     </div>
   </body>

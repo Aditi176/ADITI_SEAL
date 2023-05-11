@@ -4,6 +4,11 @@
 	padding: 0px;
 }
 
+html{
+	scroll-behavior: smooth;
+	scroll-padding: 100px;
+}
+
 body{
 	background: url(imgs/back1.jpg) no-repeat center fixed;
 	background-size: cover;
@@ -13,11 +18,13 @@ body{
 
 /*nav desktop*/
 nav{
-	z-index: 1;
-	position: fixed;
-	top: 20px;
+	z-index: 100;
+	position: sticky;
+	top: 0px;
 	left: 0;
 	right: 0;
+	height: 50px;
+	background-color: black;
 }
 
 nav ul{
@@ -32,18 +39,46 @@ nav ul li{
 	list-style: none;
 	padding: 5px 8px;
 	margin-left: 20px;
+	margin-right: 0px;
+	margin-top: 10px;
 }
 
+nav ul li a:hover,
+#active{
+	color: aqua;
+}
+
+
 nav ul li a{
+	position: relative;
 	text-decoration: none;
 	color: white;
 }
+
+nav ul li .a_links::after,
+nav ul li a.active{
+	content: "";
+	position: absolute;
+	width: 100%;
+	left: 0;
+	height: 2px;
+	bottom: -8px;
+	background-color: aqua;
+	transform: scale(0, 1);
+	transition: transform 0.3s ease;
+}
+
+nav ul li .a_links:hover:after{
+	transform: scale(1, 1);
+}
+
+
 nav ul .AS{
 	font-size: 18px;
 	font-family: 'roboto_monoo', monospace;
 	text-transform: uppercase;
 	margin-right: auto;
-	margin-top: -15px;
+	margin-top: -5px;
 }
 nav ul li .icon{
 	position: relative;
@@ -160,7 +195,7 @@ nav ul li .icon{
 	padding: 35px 10px 0 10px;
 	font-size: 18px;
 	color: white;
-	font-family: "roboto_mono", cursive;
+	font-family: "roboto_mono";
 	letter-spacing: 1px;
 }
 
@@ -169,14 +204,14 @@ nav ul li .icon{
 	text-align: left;
 	font-size: 18px;
 	color: white;
-	font-family: "roboto_mono", cursive;
+	font-family: "roboto_mono";
 }
 
 .about .resume a button{
 	margin-top: 10px;
 	text-align: center;
 	font-size: 16px;
-	font-family: "roboto_mono", cursive;
+	font-family: "roboto_mono";
 	text-transform: uppercase;
 	padding: 8px 15px;
 	border-radius: 2px;
@@ -192,13 +227,14 @@ nav ul li .icon{
 
 
 .about .container{
-	margin-top: 180px;
+	margin-top: 350px;
 }
 
 .about .col-md-7{
-	margin-top: -50px;
-	height: 62vh;
-	background-color: rgba(255,255,255,0.2);
+	margin-top: -40px;
+	height: 43vh;
+	background-color: rgba(15, 14, 14, 0.5);
+	box-shadow: 15px 30px 40px rgb(0, 0, 0);
 }
 
 .about .col-md-5{
@@ -210,7 +246,7 @@ nav ul li .icon{
 .about .col-md-5 .imgwrap{
 	background-color: white;
 	position: absolute;
-	bottom: 60px;
+	bottom: 15px;
 	right: 180px;
 	border-radius: 5px;
 }
@@ -220,8 +256,8 @@ nav ul li .icon{
 	height: 350px;
 	border-radius: 5px;
 	position: relative;
-	top: 20px;
-	left: 20px;
+	top: 30px;
+	left: 25px;
 	box-shadow: 15px 30px 40px black;
 }
 
@@ -233,6 +269,7 @@ nav ul li .icon{
 
 .contact .container{
 	margin-top: 180px;
+	margin-bottom: 150px;
 	background-color: rgba(0,0,0,0.6);
 	padding: 25px;
 	height: 50vh;
@@ -500,95 +537,63 @@ nav ul li .icon{
 
 /*skills*/
 .skills{
-	background-color: rgba(0,128,128,0.6);
+	background-color:rgba(0, 255, 255, 0.236);
 	margin-top: 10%;
-	padding: 20px 0;
+	padding: 40px 0;
 	height: auto;
 	width: 80%;
 	margin: 8% 10% 6% 10%;
 }
 .skills .container h1{
-	padding: 20px 0 20px 0px;
+	padding: 10px 0px 20px 20px;
 	color: white;
 }
 .skills .row{
-	margin-top: 20px;
-	padding: 20px 10px;
-	background-color: ;
-	height: 50vh;
+	padding: 0px 50px;
 }
-.skills .row .col-md-3{
+.skills .row .col-sm-3{
 	background-color: rgba(0,0,0,0.7);
-	height: 100%;
-	padding: 20px 8px;
-	margin-right: 5px;
-	margin-left: 60px;
+	height: 200px;
+	box-shadow: 15px 30px 40px black;
 
 }
-.skills .row .col-md-3 .text{
+.skills .row .col-sm-3 .text{
 	background-color: darkslategrey;
 	margin-left: 45px;
-	margin-top: 15px;
+	margin-top: 40px;
 	display: flex;
 	justify-content: center;
 	align-items: center;
 	border-radius: 50%;
-	height: 70%;
-	width: 70%;
+	height: 60%;
+	width: 60%;
 	border: 8px solid lavender;
 	color: white;
 	font-family: "roboto_mono", monospace;
-	font-size: 22px;
+	font-size: 15px;
 	box-shadow: 0px 1px 2px 6px grey;
 }
-.skills .row .col-md-3 .parah{
+
+.skills h4{
 	font-family: "roboto_mono", monospace;
-	font-size: 15px;
-	color: white;
+	font-size: 18px;
 	text-align: center;
-	margin-top: 30px;
-	padding: 0 5px;
+	margin-top: 10px;
+	color: white;
+}
+
+#html{
+	height: 70%;
+	width: 70%;
 }
 
 
 /*footer*/
 .footer{
 	background-color: rgba(255,255,255,0.6);
-	position: absolute;
-	bottom: 0;
-	right: 0;
-	left: 0;
 	font-family: "roboto_mono", cursive;
 	line-height: 16px;
 	text-align: center;
 	padding: 5px 0;
 }
-
-/*footer_project*/
-.footer_project{
-	background-color: rgba(255,255,255,0.6);
-	position: absolute;
-	bottom: -160px;
-	right: 0;
-	left: 0;
-	font-family: "roboto_mono", cursive;
-	line-height: 16px;
-	text-align: center;
-	padding: 5px 0;
-}
-
-/*footer_skills*/
-.footer_skills{
-	background-color: rgba(255,255,255,0.6);
-	position: absolute;
-	top: auto;
-	right: 0;
-	left: 0;
-	font-family: "roboto_mono", cursive;
-	line-height: 16px;
-	text-align: center;
-	padding: 5px 0;
-}
-
-
 

@@ -1,3 +1,4 @@
+// Contact form validation
 function check_validation() {
   var mobilenumber = document.getElementById("number").value;
   var regexp1 = /^[0,7,9,6][0-9]{9}$/;
@@ -23,3 +24,5 @@ function reset() {
   document.getElementById("number").value = "";
   document.getElementById("comment").value = "";
 }
+
+// Fixed navbar with scrolling
